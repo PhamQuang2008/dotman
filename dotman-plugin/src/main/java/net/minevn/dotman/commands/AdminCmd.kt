@@ -5,6 +5,7 @@ import net.minevn.dotman.DotMan.Companion.transactional
 import net.minevn.dotman.database.ConfigDAO
 import net.minevn.dotman.database.LogDAO
 import net.minevn.dotman.database.PlayerInfoDAO
+import net.minevn.dotman.importer.ImporterProvider
 import net.minevn.dotman.utils.Utils.Companion.makePagination
 import net.minevn.dotman.utils.Utils.Companion.runNotSync
 import net.minevn.dotman.utils.Utils.Companion.send
@@ -25,6 +26,7 @@ class AdminCmd {
             addSubCommand(setBankLocation(), "chuyenkhoan")
             addSubCommand(history(), "lichsu", "history")
             addSubCommand(napThuCong(), "napthucong", "manual")
+            addSubCommand(import(), "import")
 
             action {
                 sender.sendMessage("§b§lCác lệnh của plugin DotMan")
@@ -256,6 +258,14 @@ class AdminCmd {
                         throw e
                     }
                 }}
+            }
+        }
+
+        private fun import() = command {
+            description("Import dữ liệu từ plugin khác")
+
+            action {
+                ImporterProvider.instance.import(sender)
             }
         }
     }
