@@ -3,7 +3,7 @@ Donation Manager [![GitHub Release](https://img.shields.io/github/v/release/Mine
 
 Plugin tích hợp donate qua thẻ cào tốt nhất cho server Minecraft, nhiều tính năng hữu ích, tăng cường sự quản lý của admin và hỗ trợ nhiều dịch vụ gạch thẻ
 
-**Dịch vụ đang hỗ trợ:** [GameBank](https://sv.gamebank.vn/user/nap-the), [TheSieuToc](https://thesieutoc.net/), [GachThe5s](https://gachthe5s.com/) (✨ premium), [TheSieuViet](https://doitheviet.click/) (✨ premium)
+**Dịch vụ đang hỗ trợ:** [GameBank](https://sv.gamebank.vn/user/nap-the), [TheSieuToc](https://thesieutoc.net/), [GachThe5s](https://gachthe5s.com/) (✨ premium), [TheSieuViet](https://thesieuviet.net/) (✨ premium)
 
 Tính năng hiện có
 ===========
